@@ -10,7 +10,7 @@ body {
   min-height: calc(100vh - 4.5rem);
   display: flex;
   align-items: center;
-  padding: 4rem 0;
+  padding: 6rem 0 4rem;
   background: #dad9d63d;
 }
 
@@ -23,4 +23,24 @@ body {
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* about section */
+.about-section {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.about-section h2 {
+  letter-spacing: 0.04em;
+}
+
+.about-section p.p-text {
+  font-size: 1.33rem;
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding-top: 100px;
+  }
 }
