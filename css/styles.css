@@ -12,6 +12,15 @@ body {
   align-items: center;
   padding: 6rem 0 4rem;
   background: #dad9d63d;
+  /* fade in */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.hero-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero-image-wrapper {

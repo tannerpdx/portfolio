@@ -67,7 +67,7 @@
           <!-- hero blurb -->
           <div class="col-lg-6 mb-4 mb-lg-0">
             <p class="text-uppercase text-muted small mb-2">
-              Curated Portfolio
+              Tanner PDX Portfolio
             </p>
             <hi class="display-5 fw-semi-bold mb-3"> Hi, I'm Tanner</hi>
             <p class="lead mb-4">
@@ -378,7 +378,7 @@
           </div>
           <!-- form -->
           <div class="container w-50">
-            <form>
+            <form onsubmit="return validateForm()">
               <div class="row">
                 <!-- name -->
                 <div class="form-group mb-2">
@@ -390,6 +390,7 @@
                     name="name"
                     aria-describedby="nameHelp"
                   />
+                  <small id="name-error" class="text-danger"></small>
                 </div>
                 <!-- email -->
                 <div class="form-group mb-2">
@@ -401,6 +402,7 @@
                     name="email"
                     aria-describedby="emailHelp"
                   />
+                  <small id="email-error" class="text-danger"></small>
                 </div>
               </div>
               <!-- message -->
@@ -413,6 +415,7 @@
                   rows="3"
                   placeholder="Enter your message..."
                 ></textarea>
+                <small id="message-error" class="text-danger"></small>
               </div>
 
               <!-- success/error message -->
