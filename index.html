@@ -69,7 +69,7 @@
             <p class="text-uppercase text-muted small mb-2">
               Tanner PDX Portfolio
             </p>
-            <hi class="display-5 fw-semi-bold mb-3"> Hi, I'm Tanner</hi>
+            <h1 class="display-5 fw-semibold mb-3">Hi, I'm Tanner</h1>
             <p class="lead mb-4">
               I'm a computer science student at PSU, and I enjoy making cool
               stuff.
@@ -112,7 +112,7 @@
       </section>
       <!-- work and skills section -->
       <section id="work" class="py-5 work-section">
-        <div class="container">
+        <div class="container w-50">
           <div class="row mb-4">
             <div class="col text-center">
               <p class="text-uppercase text-muted small mb-1">
@@ -125,80 +125,143 @@
             </div>
           </div>
 
-          <div class="row gy-4 text-center">
+          <!-- accordion -->
+          <div class="accordion" id="accordionExample">
             <!-- courses -->
-            <div class="col-md-4">
-              <h3 class="h5 mb-2">Courses</h3>
-              <p class="text-muted small mb-2">Recent / relevant</p>
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <strong>Intro to Web Development</strong><br /><span
-                    class="text-muted small"
-                    >Fall 2025</span
-                  >
-                </li>
-                <li class="mt-2">
-                  <strong>Linear Algebra</strong><br /><span
-                    class="text-muted small"
-                    >Fall 2025</span
-                  >
-                </li>
-                <li class="mt-2">
-                  <strong>Intro To Database Systems</strong><br /><span
-                    class="text-muted small"
-                    >Fall 2025</span
-                  >
-                </li>
-              </ul>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Courses
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-muted small mb-2 text-uppercase">
+                    Recent / relevant
+                  </p>
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <strong>Intro to Web Development</strong><br /><span
+                        class="text-muted small"
+                        >Fall 2025</span
+                      >
+                    </li>
+                    <li class="mt-2">
+                      <strong>Linear Algebra</strong><br /><span
+                        class="text-muted small"
+                        >Fall 2025</span
+                      >
+                    </li>
+                    <li class="mt-2">
+                      <strong>Intro To Database Systems</strong><br /><span
+                        class="text-muted small"
+                        >Fall 2025</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-
-            <!-- skills -->
-            <div class="col-md-4">
-              <h3 class="h5 mb-2">Skills</h3>
-              <p class="text-muted small mb-2">Years of experience</p>
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <strong>C++</strong><br /><span class="text-muted small"
-                    >~2 years</span
-                  >
-                </li>
-                <li class="mt-2">
-                  <strong>Python</strong><br /><span class="text-muted small"
-                    >~1 year</span
-                  >
-                </li>
-                <li class="mt-2">
-                  <strong>Bootstrap / UI Layout</strong><br /><span
-                    class="text-muted small"
-                    >~1 year</span
-                  >
-                </li>
-              </ul>
+            <!-- Skills -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Skills
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-muted small mb-2 text-uppercase">
+                    Years of experience
+                  </p>
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <strong>C++</strong><br /><span class="text-muted small"
+                        >~2 years</span
+                      >
+                    </li>
+                    <li class="mt-2">
+                      <strong>Python</strong><br /><span
+                        class="text-muted small"
+                        >~1 year</span
+                      >
+                    </li>
+                    <li class="mt-2">
+                      <strong>Bootstrap / UI Layout</strong><br /><span
+                        class="text-muted small"
+                        >~1 year</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-
             <!-- tools -->
-            <div class="col-md-4">
-              <h3 class="h5 mb-2">Tools &amp; Focus</h3>
-              <p class="text-muted small mb-2">Useful tools I use daily</p>
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <strong>VS Code, Git &amp; GitHub</strong><br /><span
-                    class="text-muted small"
-                    >Version control & collaboration</span
-                  >
-                </li>
-                <li class="mt-2">
-                  <strong>Figma</strong><br /><span class="text-muted small"
-                    >UI mockups & design</span
-                  >
-                </li>
-                <li class="mt-2">
-                  <strong>Logic Pro X</strong><br /><span
-                    class="text-muted small"
-                    >Music Production & MIDI</span
-                  >
-                </li>
-              </ul>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Tools
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-muted small mb-2 text-uppercase">
+                    Useful tools I use daily
+                  </p>
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <strong>VS Code, Git &amp; GitHub</strong><br /><span
+                        class="text-muted small"
+                        >Version control & collaboration</span
+                      >
+                    </li>
+                    <li class="mt-2">
+                      <strong>Figma</strong><br /><span class="text-muted small"
+                        >UI mockups & design</span
+                      >
+                    </li>
+                    <li class="mt-2">
+                      <strong>Logic Pro X</strong><br /><span
+                        class="text-muted small"
+                        >Music Production & MIDI</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
